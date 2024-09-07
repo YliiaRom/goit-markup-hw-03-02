@@ -1,0 +1,171 @@
+/* font-family: "Roboto", sans-serif;
+font-family: "Raleway", sans-serif; */
+ul,
+ol {
+  list-style-type: none;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  background-color: #fff;
+}
+.main-title {
+  font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2e2f42;
+}
+.title {
+  font-weight: 500;
+font-size: 20px; 
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: #2e2f42;
+}
+
+/* ..............ШАПКА..................... */
+
+
+/* .............logo........................ */
+.header {
+  background-color: #fff;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5
+}
+
+
+.header-logo-studio {
+  color: #2e2f42;
+}
+
+.footer-logo-studio {
+  color: #f4f4fd;
+}
+
+
+.header-nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42; 
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: #404bbf;
+}
+
+
+/* ...../контакты/........ */
+
+.header-contacts {
+  font-style: normal;
+}
+
+
+.header-contact-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/* ...../HOVER FOCUS/..................... */
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-contact-link:hover,
+.header-contact-link:focus {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #404bbf;
+}
+
+
+/* ...........conteiner-top........... */
+.conteiner-top {
+  background: #2e2f42;
+}
+.top-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+}
+
+.top-button {
+  font-weight: 500;
+  font-size: 16px; 
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: #4d5ae5;
+  cursor: pointer;
+}
+
+.top-button:hover,
+.top-button:focus {
+background-color: #404bbf;
+}
+/* .................БЛОК-2-features....................... */
+.features-title {
+  opacity: 0;
+}
+/* .......................БЛОК_3-Our Team.......... */
+
+.team-info {
+  background: #f4f4fd;
+}
+
+.team-title {
+  text-transform: capitalize;
+}
+
+.team-card-item {
+background: #fff;
+}
+
+.team-card-prof {
+  font-size: 16px;
+}
+/* .................portfolio............ */
+
+.portfolio-title{
+  text-transform: capitalize;
+}
+
+/*..................FOOTER................. */
+
+.conteiner-footer{
+  background-color: #2e2f42;;
+}
+
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
