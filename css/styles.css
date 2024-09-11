@@ -1,13 +1,26 @@
-/* font-family: "Roboto", sans-serif;
-font-family: "Raleway", sans-serif; */
-ul,
-ol {
-  list-style-type: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px 0px 0px 0px;
 }
 
+ul,
+ol {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  list-style-type: none;
+}
+* {
+  box-sizing: border-box;
+}
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 body {
@@ -34,14 +47,43 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
 }
+img {
+  display: block;
+}
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 
+}
 /* ..............ШАПКА..................... */
-
+/* =========HEADER=============== */
 
 /* .............logo........................ */
-.header {
+.page-header {
   background-color: #fff;
+  border-bottom: 1px solid #e7e9fc;;
 }
+.header-conteiner {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header-nav-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.header-nav-item {
+  padding: 24px 0;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -49,7 +91,9 @@ color: #2e2f42;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5
+  color: #4d5ae5;
+  margin-right: 76px;
+  
 }
 
 
@@ -80,8 +124,15 @@ color: #2e2f42;
 
 .header-contacts {
   font-style: normal;
+  margin-left: auto;
 }
 
+.header-contacts-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
 
 .header-contact-link {
   font-size: 16px;
@@ -89,7 +140,9 @@ color: #2e2f42;
   letter-spacing: 0.02em;
   color: #434455;
 }
-
+.header-contacts-item {
+  padding: 24px 0 ;
+}
 /* ...../HOVER FOCUS/..................... */
 .header-nav-link:hover,
 .header-nav-link:focus,
@@ -100,22 +153,41 @@ color: #2e2f42;
   letter-spacing: 0.02em;
   color: #404bbf;
 }
+/* =========/HEADER=============== */
 
 
+/* =========TOP BANER=============== */
 /* ...........conteiner-top........... */
 .conteiner-top {
   background: #2e2f42;
+  /* padding: 118px 0px;
+  text-align: center; */
 }
+
+.conteiner-top>.container {
+  padding: 118px 0px;
+  text-align: center;
+}
+
 .top-title {
+  max-width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .top-button {
+  display: block;
+  margin: 0 auto;
+  min-width: 169;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
   font-weight: 500;
   font-size: 16px; 
   line-height: 1.5;
@@ -128,44 +200,122 @@ color: #2e2f42;
 .top-button:hover,
 .top-button:focus {
 background-color: #404bbf;
+/* =========/TOP BANER=============== */
+
+/* =2========FEATURES=============2= */
 }
 /* .................БЛОК-2-features....................... */
-.features-title {
-  opacity: 0;
+.features {
+  padding: 120px 0;
+
 }
+
+.features-title {
+  visibility: hidden;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24;
+}
+.feature-item {
+  width: calc((100% - 24px * 3) / 4);
+}
+
+.feature-title {
+  margin-bottom: 8px;
+
+}
+/* =2========/FEATURES=============2= */
+
+
+/* =3========Our Team=============3= */
 /* .......................БЛОК_3-Our Team.......... */
 
 .team-info {
   background: #f4f4fd;
+  padding: 120px 0;
 }
 
 .team-title {
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.team-card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .team-card-item {
 background: #fff;
+width: calc((100% - 72px) / 4);
+border-radius: 0 0 4px 4px;
+box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.conteiner-card-user {
+  padding: 32px 0;
+}
+
+.team-card-name {
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-card-prof {
   font-size: 16px;
+  text-align: center;
 }
 /* .................portfolio............ */
-
+.portfolio {
+  padding: 120px 0;
+}
 .portfolio-title{
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
+.portfolio-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 48px;
+
+}
+
+.portfolio-item {
+  width: calc((100% - 48px) / 3);
+  
+}
+.portfolio-card {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+.portfolio-item-title {
+  margin-bottom: 8px;
+}
 /*..................FOOTER................. */
 
 .conteiner-footer{
-  background-color: #2e2f42;;
+  background-color: #2e2f42;
+  padding: 100px 0;
 }
-
-
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
 .footer-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
